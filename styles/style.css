@@ -31,7 +31,7 @@ body {
 .wrap {
   width: 100%;
   height: 100vh;
-  background: url(/images/bg8.jpg) repeat,
+  background: url(/static/images/bg8.jpg) repeat,
               radial-gradient(circle at center top, #307885, #252c36);
   text-align: center;
   -ms-user-select: none; 
@@ -106,7 +106,7 @@ body {
 .drag {
   width: 2.1rem;
   padding: 0;
-  background: url(/images/dotes.png) no-repeat center #08b6a7;
+  background: url(/static/images/dotes.png) no-repeat center #08b6a7;
   cursor: move;
   border-radius: 7px;
 }
@@ -149,7 +149,7 @@ body {
 }
 
 .menu__icon {
-  background-image: url(/images/spritesheet.png);
+  background-image: url(/static/images/spritesheet.png);
   background-repeat: no-repeat;
 }
 
@@ -240,7 +240,7 @@ body {
 }
 
 .comments-tools:after, .draw-tools:after, .share-tools:after, .delete-tools::after {
-  content: url(/images/triangle.png);
+  content: url(/static/images/triangle.png);
   position: absolute;
   top: 2.6rem;
   left: -0.7rem;
@@ -290,7 +290,7 @@ body {
 .menu__color:checked + span {
   border-radius: 1.2rem;
   border: 0.3rem solid #fff;
-  cursor:url(\images\edit.png);
+  cursor:url(\static\images\edit.png);
 }
 
 .menu__color.red + span {
@@ -426,7 +426,7 @@ body {
   top: -1rem;
   width: 2.8rem;
   height: 2.5rem;   
-  background-image: url(/images/comment.png);
+  background-image: url(/static/images/comment.png);
   background-repeat: no-repeat;
   cursor: pointer;
   border-radius: 3px 3px 0 0;

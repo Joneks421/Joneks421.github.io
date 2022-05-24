@@ -7,7 +7,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-
 * {
     margin: 0;
     padding: 0;
@@ -72,14 +71,17 @@ h2 {
 
 
 .container-menu {
-    padding: 0 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    /* padding: 0 100px; */
     background-color: #014952;
 }
 
 .name-menu {
-    position: absolute;
+    /* position: absolute;
     left: 100px;
-    top: 20px;
+    top: 20px; */
     width: 80px;
     color: #CCC;
     padding: 5px;
@@ -192,7 +194,7 @@ h2 {
   }
 
 
-.header {
+body {
     background:radial-gradient(circle at top center, #004f59, #252c36);
 }
 
@@ -200,17 +202,17 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    align-items: center;
+    align-items: stretch;
     justify-content: space-around;
     text-align: center;
-    padding: 0 170px;
+    width: 80%;
+    /* padding: 0 170px; */
 }
 
 .menu_item {
-    flex-basis: 0;
-    flex-grow: 1;
+    width: 20%;
     margin: 15px;
-    padding: 10px;
+    padding: 10px 20px;
     border: 1px solid #3F3F3F;
     color: #EEEEEE;
     border-radius: 4px;
@@ -262,7 +264,7 @@ h2 {
 
 .main-container-logo {
     height: 60px;
-    background-image: url("/images/logo.png");
+    background-image: url("../images/logo.png");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -286,7 +288,7 @@ h2 {
 }
 
 
-.index-content > a:hover {
+.main-container > a:hover {
     background-color: #47D2E9;
     color: #3F3F3F;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
@@ -308,7 +310,6 @@ h2 {
 
 .index-content.about-container > p {
     font-size: 25px;
-    height: 60vh;
     padding: 70px 0 50px 0;
     margin: 0 100px 0 100px;
     color: #CCC;
@@ -375,9 +376,9 @@ h2 {
   background:radial-gradient(line at top bottom, #004d57, #252c36);
 }
 
-.col-lg-4 {
+/* .col-lg-4 {
   background:radial-gradient(line at top bottom, #004d57, #252c36);
-}
+} */
 
 .row {
   background-color: #223034;
@@ -397,68 +398,38 @@ h2 {
     border-radius: 30px;
 }
 
+.faq-p > p {
+  color: #ccc;
+  text-align: center;
+}
+
 .index-content.inst-container {
   margin: 0 150px 0 150px;
   background-color: #252c36;
   border-radius: 30px;
 }
 
-.index-content.inst-container-1 {
+.inst-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.inst-container > div {
+    width: 46%;
+    padding: 25px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.inst-container > div > img {
+  width: 100%;
+}
+
+.inst-container > div > p {
     text-align: left;
     font-size: 22px;
     color: #CCC;
-    width: 606px;
-    margin-right: 10px;
-    display: inline-block;
-    position: relative;
-    width: 46%;
-    margin-right: 20px;
-    margin-bottom: 15px;
-    padding-top: 20px;
-}
-
-.index-content.inst-container-1img {
-    background-image: url("/images/review-all.jpg");
-    height: 195px;
-    display: inline-block;
-    position: relative;
-    width: 46%;
-    margin-right: 20px;
-    margin-bottom: 20px;
-    background-position: center center;
-}
-
-.index-content.inst-container-2 {
-    text-align: left;
-    font-size: 22px;
-    color: #CCC;
-    width: 606px;
-    margin-right: 10px;
-    display: inline-block;
-    position: relative;
-    width: 46%;
-    margin: 0;
-    margin-bottom: 15px;
-    padding-top: 20px;
-}
-
-.index-content.inst-container-2img {
-    background-image: url("/images/components.jpg");
-    height: 400px;
-    display: inline-block;
-    position: relative;
-    width: 46%;
-    margin-bottom: 20px;
-}
-
-.index-content.inst-container-3img {
-    background-image: url("/images/default-sm-comments.jpg");
-    height: 195px;
-    width: 444px;
-    display: inline-block;
-    position: absolute;
-    left: 175px;
-    background-position: center center;
 }
 
 @keyframes invisible {
@@ -499,4 +470,98 @@ form {
 
 .form_group > input[type='submit']:hover {
     box-shadow: 0 0 5px rgba(22, 22, 22, 0.8);
+}
+
+
+@media (max-width: 830px) {
+  .container-menu {
+    padding: 20px;
+    flex-direction: column;
+  }
+  .menu {
+    width: 100%;
+
+    flex-wrap: wrap;
+    /* flex-direction: column;
+    align-items: center; */
+  }
+
+  .menu_item {
+    width: 45%;
+  }
+
+  .main-container {
+    margin: 50px 50px 0 50px;
+    background-color: #252c36;
+    border-radius: 30px; 
+    padding: 40px 0 40px 0;
+}
+
+  .main-container > h1 {
+    color: #CCC;
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+    padding: 30px 10px;
+    margin-top: 50px;
+  }
+
+  .index-content.about > h2, .index-content.inst > h2, .index-content.info > h2{
+    padding: 30px;
+    margin-top: 50px;
+    font-size: 2.5rem;
+    line-height: 5.5rem;
+    color: #CCC;
+  }
+
+  .index-content.about-container {
+    margin: 0 50px 0 50px;
+    background-color: #252c36;
+    border-radius: 30px;
+  }
+
+  .index-content.about-container > p {
+    font-size: 20px;
+    padding: 70px 0 50px 0;
+    margin: 0 100px 0 100px;
+    color: #CCC;
+  }
+
+  .index-content.inst-container {
+    margin: 0 50px 0 50px;
+    background-color: #252c36;
+    border-radius: 30px;
+  }
+
+  .inst-container > div > p {
+    text-align: left;
+    font-size: 17px;
+    color: #CCC;
+  }
+
+  .card-body > p {
+    font-size: 17px;
+  }
+
+  .card-body > h5 {
+    font-size: 20px;
+  }
+
+}
+
+@media (max-width: 600px) {
+  .inst-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .inst-container>div {
+    width: 100%;
+    padding: 15px;
+  }
+  .inst-container>div>p {
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
 }
