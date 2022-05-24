@@ -106,7 +106,7 @@ body {
 .drag {
   width: 2.1rem;
   padding: 0;
-  background: url(/images/dotes.png) no-repeat center #08b6a7;
+  background: url(\images\dotes.png) no-repeat center #08b6a7;
   cursor: move;
   border-radius: 7px;
 }
@@ -149,7 +149,7 @@ body {
 }
 
 .menu__icon {
-  background-image: url(/images/spritesheet.png);
+  background-image: url(\images\spritesheet.png);
   background-repeat: no-repeat;
 }
 
@@ -426,7 +426,7 @@ body {
   top: -1rem;
   width: 2.8rem;
   height: 2.5rem;   
-  background-image: url(/images/comment.png);
+  background-image: url(\images\comment.png);
   background-repeat: no-repeat;
   cursor: pointer;
   border-radius: 3px 3px 0 0;
