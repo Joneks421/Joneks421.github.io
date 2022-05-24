@@ -262,7 +262,7 @@ h2 {
 
 .main-container-logo {
     height: 60px;
-    background-image: url("../images/logo.png");
+    background-image: url("/images/logo.png");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -418,7 +418,7 @@ h2 {
 }
 
 .index-content.inst-container-1img {
-    background-image: url("../images/review-all.jpg");
+    background-image: url("/images/review-all.jpg");
     height: 195px;
     display: inline-block;
     position: relative;
@@ -443,7 +443,7 @@ h2 {
 }
 
 .index-content.inst-container-2img {
-    background-image: url("../images/components.jpg");
+    background-image: url("/images/components.jpg");
     height: 400px;
     display: inline-block;
     position: relative;
@@ -452,7 +452,7 @@ h2 {
 }
 
 .index-content.inst-container-3img {
-    background-image: url("../images/default-sm-comments.jpg");
+    background-image: url("/images/default-sm-comments.jpg");
     height: 195px;
     width: 444px;
     display: inline-block;
